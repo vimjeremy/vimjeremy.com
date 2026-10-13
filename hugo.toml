@@ -1,0 +1,66 @@
+title = "vimjeremy.com"
+theme = "not-much"
+baseURL = "https://vimjeremy.com/"
+copyright = "jeremy © {year}"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    locale = "en"
+    weight = 1
+    [languages.en.params.giscus]
+    language = "en"
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+theme = "auto"
+palette = "eink"
+showThemeNotice = false
+showPostsSummary = true
+
+# Giscus Comment System
+[params.giscus]
+repository = "username/repository"
+repositoryId = "repositoryId"
+categoryName = "categoryName"
+categoryId = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
+language = "en" # is configured directly under languages.<languageCode>.params.giscus
+lazyLoading = true
+
+# Navigation
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    title = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "posts"
+    title = "posts"
+    url = "/posts/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "about"
+    title = "About"
+    url = "/about"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "tags"
+    title = "tags"
+    url = "/tags"
+    weight = 4
