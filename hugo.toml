@@ -12,7 +12,7 @@ defaultContentLanguageInSubdir = false
     locale = "en"
     weight = 1
     [languages.en.params.giscus]
-    language = "en"
+        language = "en"
 
 [markup]
   [markup.highlight]
@@ -29,13 +29,12 @@ showPostsSummary = true
 
 # Giscus Comment System
 [params.giscus]
-repository = "username/repository"
-repositoryId = "repositoryId"
-categoryName = "categoryName"
-categoryId = "categoryId"
+repository = "vimjeremy/vimjeremy.com"
+repositoryId = "R_kgDOVFMEGg"
+categoryName = "Announcements"
+categoryId = "DIC_kwDOVFMEGs4DIVaO"
 mapping = "pathname"
 theme = "preferred_color_scheme"
-language = "en" # is configured directly under languages.<languageCode>.params.giscus
 lazyLoading = true
 
 # Navigation

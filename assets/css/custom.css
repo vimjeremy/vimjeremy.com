@@ -1,0 +1,27 @@
+/* The theme floats the TOC on top of the post text. Put it back in the
+   normal page flow (above the article) by default... */
+@media (min-width: 768px) {
+  .toc {
+    position: static !important;
+    margin-right: 0 !important;
+    margin-bottom: 1.5rem;
+    opacity: 1 !important;
+  }
+}
+
+/* ...and only float it in the empty margin when the screen is wide
+   enough that it can't touch the text (container is 1320px at this size). */
+@media (min-width: 1800px) {
+  .toc {
+    position: fixed !important;
+    right: auto !important;
+    left: calc(50% + 660px + 20px);
+    width: 200px;
+    margin-bottom: 0;
+    opacity: 0.4 !important;
+  }
+
+  .toc:hover {
+    opacity: 1 !important;
+  }
+}
