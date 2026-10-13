@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2026-10-13-hugo/">
+	<meta property="og:site_name" content="vimjeremy.com">
+	<meta property="og:title" content="How to use HUGO to make a blog website.">
+	<meta property="og:description" content="Introduction This post is about how I made this website to begin with. It’s very simple to set up.
+If you haven’t caught it already, this website is made with HUGO, which is a static website generator that, in this case, converts markdown files I write in Obsidian to HTML files for use with the website.
+So why did I decide on HUGO? Well, I had 3 goals in mind when I was making this website:">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-10-13T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-10-13T00:00:00+00:00">
+
+<title>vimjeremy.com | How to use HUGO to make a blog website.</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+  
+      <link rel="stylesheet" href="/css/palette/eink.css">
+
+      <script src="/js/main.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+  
+<body
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+
+
+  <nav aria-label="breadcrumb" class="
+    small
+    navbar
+    navbar-dark
+    navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts/"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">How to use HUGO to make a blog website.</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2026-10-13T00:00:00&#43;00:00">October 13, 2026</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              7 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <h2 id="introduction">Introduction</h2>
+<p>This post is about how I made this website to begin with. It&rsquo;s very simple to set up.</p>
+<p>If you haven&rsquo;t caught it already, this website is made with <a href="https://github.com/gohugoio/hugo">HUGO</a>, which is a static website generator that, in this case, converts markdown files I write in <a href="https://obsidian.md/">Obsidian</a> to HTML files for use with the website.</p>
+<p>So why did I decide on HUGO? Well, I had 3 goals in mind when I was making this website:</p>
+<ol>
+<li>Make it simple for me to write blog posts, preferably in something I already know.</li>
+<li>Make it fall easily into my established workflow.</li>
+<li>Be easy to set up.</li>
+</ol>
+<p>HUGO accomplishes all of those things. It supports markdown, which is <strong>very</strong> easy to learn; it makes it so I can use Obsidian, which I already use as my note-taking app to write blog posts; and it is really easy to set up and I mean really, really easy.</p>
+<p>So in this initial post I am going to guide you on how you can make a similar website to mine.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>For making such website you will need:</p>
+<ul>
+<li><a href="https://obsidian.md/">Obsidian.</a></li>
+<li><a href="https://git-scm.com/">Git.</a></li>
+<li><a href="https://github.com/gohugoio/hugo">HUGO.</a></li>
+<li>A terminal emulator.</li>
+<li>A code editor, I use <a href="https://zed.dev">Zed</a>, although probably this will become outdated.</li>
+<li>A <a href="https://github.com/">Github</a> account.</li>
+</ul>
+<h2 id="initial-setup">Initial setup</h2>
+<p>Now that we have the prerequisites installed, we can start making the website.
+First navigate to the folder you want to keep the website in using the terminal. For me, that&rsquo;s Documents, so I will run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">cd</span> ~/Documents
+</span></span></code></pre></div><p>Now to initialize the website, we run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site vimjeremy.com
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">cd</span> vimjeremy.com
+</span></span></code></pre></div><p>Feel free to substitute the URL of the website for your own</p>
+<h3 id="installing-a-theme">Installing a theme.</h3>
+<p>Now that we&rsquo;re in the website folder, its time to pick a theme. I went with <a href="https://github.com/imgios/not-much/tree/main">not-much.</a> All themes have the same install steps. Add it into the <code>themes</code> directory as a submodule, and append it as a theme to the config file. Before we do that though, we have to initialize a git repo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p>Now, we clone the theme. Substitute the repo of the theme for the one you picked.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://git.andy.sb/nojs.git ./themes/nojs
+</span></span></code></pre></div><p>Next, we have to edit the <code>hugo.toml</code> config file with the name of our theme and some basic sections. For this theme, the example config file is in <code>$themeDir/exampleSite/config.toml</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>title = <span style="color:#f1fa8c">&#34;title&#34;</span>
+</span></span><span style="display:flex;"><span>theme = <span style="color:#f1fa8c">&#34;not-much&#34;</span>
+</span></span><span style="display:flex;"><span>baseURL = <span style="color:#f1fa8c">&#34;https://example.org/&#34;</span>
+</span></span><span style="display:flex;"><span>copyright = <span style="color:#f1fa8c">&#34;Copyright © {year}&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>defaultContentLanguage = <span style="color:#f1fa8c">&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span>defaultContentLanguageInSubdir = <span style="color:#ff79c6">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[languages]
+</span></span><span style="display:flex;"><span>  [languages.en]
+</span></span><span style="display:flex;"><span>    languageName = <span style="color:#f1fa8c">&#34;English&#34;</span>
+</span></span><span style="display:flex;"><span>    locale = <span style="color:#f1fa8c">&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>    [languages.en.params.giscus]
+</span></span><span style="display:flex;"><span>    language = <span style="color:#f1fa8c">&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[markup]
+</span></span><span style="display:flex;"><span>  [markup.highlight]
+</span></span><span style="display:flex;"><span>    style = <span style="color:#f1fa8c">&#39;dracula&#39;</span>
+</span></span><span style="display:flex;"><span>  [markup.goldmark]
+</span></span><span style="display:flex;"><span>    [markup.goldmark.renderer]
+</span></span><span style="display:flex;"><span>      unsafe = <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>theme = <span style="color:#f1fa8c">&#34;auto&#34;</span>
+</span></span><span style="display:flex;"><span>palette = <span style="color:#f1fa8c">&#34;eink&#34;</span>
+</span></span><span style="display:flex;"><span>showThemeNotice = <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>showPostsSummary = <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Giscus Comment System</span>
+</span></span><span style="display:flex;"><span>[params.giscus]
+</span></span><span style="display:flex;"><span>repository = <span style="color:#f1fa8c">&#34;username/repository&#34;</span>
+</span></span><span style="display:flex;"><span>repositoryId = <span style="color:#f1fa8c">&#34;repositoryId&#34;</span>
+</span></span><span style="display:flex;"><span>categoryName = <span style="color:#f1fa8c">&#34;categoryName&#34;</span>
+</span></span><span style="display:flex;"><span>categoryId = <span style="color:#f1fa8c">&#34;categoryId&#34;</span>
+</span></span><span style="display:flex;"><span>mapping = <span style="color:#f1fa8c">&#34;pathname&#34;</span>
+</span></span><span style="display:flex;"><span>theme = <span style="color:#f1fa8c">&#34;preferred_color_scheme&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># language = &#34;en&#34; is configured directly under languages.&lt;languageCode&gt;.params.giscus</span>
+</span></span><span style="display:flex;"><span>lazyLoading = <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Navigation</span>
+</span></span><span style="display:flex;"><span>[menu]
+</span></span><span style="display:flex;"><span>  [[menu.main]]
+</span></span><span style="display:flex;"><span>    identifier = <span style="color:#f1fa8c">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span>    name = <span style="color:#f1fa8c">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span>    title = <span style="color:#f1fa8c">&#34;Home&#34;</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#f1fa8c">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  [[menu.main]]
+</span></span><span style="display:flex;"><span>    identifier = <span style="color:#f1fa8c">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>    title = <span style="color:#f1fa8c">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#f1fa8c">&#34;/posts&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#bd93f9">3</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  [[menu.main]]
+</span></span><span style="display:flex;"><span>    identifier = <span style="color:#f1fa8c">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span>    title = <span style="color:#f1fa8c">&#34;About&#34;</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#f1fa8c">&#34;/about&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  [[menu.main]]
+</span></span><span style="display:flex;"><span>    identifier = <span style="color:#f1fa8c">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span>    title = <span style="color:#f1fa8c">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#f1fa8c">&#34;/tags&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#bd93f9">4</span>
+</span></span></code></pre></div><p>I cleaned it up a bit here. You can now look through it and edit what interests you.</p>
+<p>Now let&rsquo;s make the posts directory and run the server.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p content/posts
+</span></span><span style="display:flex;"><span>cat <span style="color:#f1fa8c">&lt;&lt; EOF &gt;&gt; content/posts/test.md
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">---
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">title: &#34;test&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">draft: false
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">---
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">hello
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hugo server --disableFastRender
+</span></span></code></pre></div><p>Bang! We have a working website! Open the link it gives you in the command output usually <a href="http://localhost:1313">this</a>.
+<img src="./2026-10-13-hugo/initial.png" alt=""></p>
+<h2 id="tweaks">Tweaks</h2>
+<p>Although this is a functioning website, there is still a lot we need to add.</p>
+<ol>
+<li>Create some pages and directories</li>
+<li>Sync with obsidian</li>
+<li>Fix image rendering</li>
+</ol>
+<h3 id="creating-extra-pages-and-directories">Creating extra pages and directories</h3>
+<p>I&rsquo;ll start with this since it&rsquo;s the easiest. Let&rsquo;s create the home page.
+Create <code>content/_index.md</code>. I&rsquo;ll simply add a <code>H3</code> heading with a slogan.</p>
+<p>Now for the about page create <code>content/about/_index.md</code>. This is where I&rsquo;ll put my links and a little description of myself.</p>
+<p>Finally, create a <code>content/posts</code> directory to store our posts.</p>
+<h3 id="syncing-with-obsisian">Syncing with Obsisian</h3>
+<p>This is (probably) the longest part. First, we need to create a folder in our vault. Name it whatever you want. I named mine <code>blog-posts</code>. Now we need to create a shell script for copying the files from our vault to our website. Remember to place it in the root of the website&rsquo;s folder or else it won&rsquo;t work.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff79c6">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"># Copies your Obsidian posts into the Hugo site.</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Usage:</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">#   ./sync-posts.sh            copy for real</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">#   ./sync-posts.sh --dry-run  only show what WOULD change, copy nothing</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Stop at the first error, and treat unset variables as errors.</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">set</span> -euo pipefail
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Where your posts live in Obsidian (the trailing / matters, see below).</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">SOURCE</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Where Hugo reads posts from: &#34;content/posts&#34; next to this script.</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># $(dirname &#34;$0&#34;) is the folder this script is in, so it works from anywhere.</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">DEST</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;</span><span style="color:#ff79c6">$(</span><span style="color:#8be9fd;font-style:italic">cd</span> <span style="color:#f1fa8c">&#34;</span><span style="color:#ff79c6">$(</span>dirname <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$0</span><span style="color:#f1fa8c">&#34;</span><span style="color:#ff79c6">)</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">&amp;&amp;</span> <span style="color:#8be9fd;font-style:italic">pwd</span><span style="color:#ff79c6">)</span><span style="color:#f1fa8c">/content/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Refuse to run if the source folder is missing. Otherwise --delete below would</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># make the destination match an empty folder and wipe all your posts.</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> <span style="color:#ff79c6">[</span> ! -d <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$SOURCE</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">]</span>; <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Error: can&#39;t find </span><span style="color:#8be9fd;font-style:italic">$SOURCE</span><span style="color:#f1fa8c">&#34;</span> &gt;&amp;<span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">exit</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir -p <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$DEST</span><span style="color:#f1fa8c">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># -a  archive: copy folders recursively and keep timestamps</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># -v  verbose: list each file that is copied or removed</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># --delete  remove files from DEST that are no longer in SOURCE (a true mirror)</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># --exclude  skip Obsidian&#39;s hidden settings folder and macOS junk files</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># &#34;$@&#34;  passes along anything you typed after the script name, like --dry-run</span>
+</span></span><span style="display:flex;"><span>rsync -av --delete <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span>  --exclude<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;.obsidian&#39;</span> <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span>  --exclude<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;.DS_Store&#39;</span> <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span>  <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$@</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span>  <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$SOURCE</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$DEST</span><span style="color:#f1fa8c">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Done.&#34;</span>
+</span></span></code></pre></div><p>Now right click on the folder in Obsidian and select &ldquo;Copy path from system root&rdquo; and paste it into the <code>SOURCE</code> variable. Save the script and <code>chmod +x</code> it.</p>
+<h3 id="rendering-images">Rendering Images.</h3>
+<p>This is pretty simple. First, create <code>layouts/_markup/render-image.html</code> and paste this HTML code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{- /* Overrides the theme&#39;s image template. In Obsidian an image path is relative
+</span></span><span style="display:flex;"><span>       to the note file (./my-post/pic.png), but on the built site the post is its
+</span></span><span style="display:flex;"><span>       own folder, so that path points to the wrong place. For relative paths we
+</span></span><span style="display:flex;"><span>       look the file up by name among the post&#39;s own files and use its real
+</span></span><span style="display:flex;"><span>       published address. Web links (https://...) and /absolute paths are left alone. */ -}}
+</span></span><span style="display:flex;"><span>{{- $src := .Destination -}}
+</span></span><span style="display:flex;"><span>{{- $u := urls.Parse $src -}}
+</span></span><span style="display:flex;"><span>{{- if and (not $u.Scheme) (not (hasPrefix $src &#34;/&#34;)) -}}
+</span></span><span style="display:flex;"><span>  {{- with .PageInner.Resources.Get (path.Base $u.Path) -}}
+</span></span><span style="display:flex;"><span>    {{- $src = .RelPermalink -}}
+</span></span><span style="display:flex;"><span>  {{- end -}}
+</span></span><span style="display:flex;"><span>{{- end -}}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">figure</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;{{ $src | safeURL }}&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;{{ .Text }}&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>  {{ if .Title }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">figcaption</span>&gt;{{ .Title }}&lt;/<span style="color:#ff79c6">figcaption</span>&gt;
+</span></span><span style="display:flex;"><span>  {{- end }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">figure</span>&gt;
+</span></span></code></pre></div><p>Next and <strong>DO NOT SKIP THIS</strong>, open Obsidian&rsquo;s settings and disable the &ldquo;Use Wikilinks&rdquo; option. Now images should render without any problems.</p>
+<h2 id="making-it-available-to-the-public">Making it available to the public.</h2>
+<p>Remember that account we made on Github? This is where we use it. Create a repository using the &ldquo;+&rdquo; icon on Github&rsquo;s website. Set the visibility to public and name it the URL of your website.</p>
+<p>Now we can stage and commit our changes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#f1fa8c">&#34;Created website.&#34;</span>
+</span></span><span style="display:flex;"><span>git remote add origin &lt;url&gt;
+</span></span><span style="display:flex;"><span>git push -u origin &lt;branch&gt;
+</span></span></code></pre></div><p>I&rsquo;ll use Cloudflare pages for my domain, since that&rsquo;s where i have my domain. You can use any static hosting provider, tho.</p>
+<p>The process is the same. Link the Github repo and change the folder to <code>/public</code>. You can usually leave the rest blank. Now it&rsquo;s available at <a href="https://vimjeremy.com">vimjeremy.com</a>. Hooray!</p>
+<h2 id="workflow">Workflow</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">cd</span> ~/Documents/vimjeremy.com
+</span></span><span style="display:flex;"><span>./sync-posts.sh
+</span></span><span style="display:flex;"><span>hugo
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#f1fa8c">&#34;Added post.&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div>
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  
+    <footer>
+      <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        jeremy © 2026
+        
+    </p>
+</div>
+
+    </footer>
+  
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    function detectThemePreferences() {
+      let themeClasses = ["text-dark"];
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          themeClasses = ["text-light", "dark"];
+      }
+      document.body.classList.add(...themeClasses);
+    }
+
+    detectThemePreferences();
+  </script>
+
+  
+
+</body>
+</html>

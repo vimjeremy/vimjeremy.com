@@ -12,6 +12,15 @@
 			<copyright>jeremy © {year}</copyright>
 		
 		
+			<lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How to use HUGO to make a blog website.</title>
+				<link>http://localhost:1313/posts/2026-10-13-hugo/</link>
+				<pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026-10-13-hugo/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This post is about how I made this website to begin with. It&amp;rsquo;s very simple to set up.&lt;/p&gt;&#xA;&lt;p&gt;If you haven&amp;rsquo;t caught it already, this website is made with &lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;HUGO&lt;/a&gt;, which is a static website generator that, in this case, converts markdown files I write in &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; to HTML files for use with the website.&lt;/p&gt;&#xA;&lt;p&gt;So why did I decide on HUGO? Well, I had 3 goals in mind when I was making this website:&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>
