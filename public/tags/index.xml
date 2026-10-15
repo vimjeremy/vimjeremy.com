@@ -12,9 +12,37 @@
 			<copyright>jeremy © {year}</copyright>
 		
 		
-			<lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://vimjeremy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>DIY</title>
+				<link>https://vimjeremy.com/tags/diy/</link>
+				<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://vimjeremy.com/tags/diy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Handwired</title>
+				<link>https://vimjeremy.com/tags/handwired/</link>
+				<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://vimjeremy.com/tags/handwired/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>JM46</title>
+				<link>https://vimjeremy.com/tags/jm46/</link>
+				<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://vimjeremy.com/tags/jm46/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Keyboard</title>
+				<link>https://vimjeremy.com/tags/keyboard/</link>
+				<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://vimjeremy.com/tags/keyboard/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Blog</title>
 				<link>https://vimjeremy.com/tags/blog/</link>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Keyboard on vimjeremy.com</title>
+		<link>https://vimjeremy.com/tags/keyboard/</link>
+		<description>Recent content in Keyboard on vimjeremy.com</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+			<copyright>jeremy © {year}</copyright>
+		
+		
+			<lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://vimjeremy.com/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Making a handwired split keyboard. (Part 1)</title>
+				<link>https://vimjeremy.com/posts/2026-10-15-hwkbd1/</link>
+				<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://vimjeremy.com/posts/2026-10-15-hwkbd1/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction.&lt;/h2&gt;&#xA;&lt;p&gt;So during the past year I&amp;rsquo;ve been heading more and more into the split keyboard space, having built a choc &lt;a href=&#34;https://github.com/davidphilipbarr/sweep&#34;&gt;Ferris Sweep&lt;/a&gt; and experimented with different keyboard layouts, colemak and dvorak respectively (i stuck with qwerty, though). Recently though, I stumbled upon this guy &lt;a href=&#34;https://www.youtube.com/@joe_scotto&#34;&gt;Joe Scotto&lt;/a&gt; and I got intrigued by the whole handwired keyboard thing. What&amp;rsquo;s crazy to me is that you can literally build a (100% usable) keyboard for usually under 30 bucks. I decided to look into it, and next thing I know, I&amp;rsquo;m making my own.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
